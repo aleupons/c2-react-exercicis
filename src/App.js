@@ -1,19 +1,19 @@
-import { Circulo } from "./components/Circulo";
+import { Cercle } from "./components/Cercle";
 import { useState } from "react";
 function App() {
-  const numeroCirculos = 5;
-  const circulos = new Array(numeroCirculos);
-  const [estado, setEstado] = useState(false);
-  const modificaState = () => {
-    setEstado(true);
+  const numeroCercles = 5;
+  const cercles = new Array(numeroCercles);
+  const [estat, setEstat] = useState(false);
+  const modificaEstat = () => {
+    setEstat(true);
   };
   return (
     <ul>
-      {circulos.map((circulo, i) => (
-        <Circulo
-          className="circulo"
-          estado={estado}
-          onClick={modificaState}
+      {cercles.map((cercle, i) => (
+        <Cercle
+          className="cercle"
+          estat={estat}
+          onClick={modificaEstat}
           key={i}
         />
       ))}
