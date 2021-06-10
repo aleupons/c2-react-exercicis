@@ -3,7 +3,7 @@ import { useState } from "react";
 export const Cercle = () => {
   const [estat, setEstat] = useState(false);
   const modificaEstat = () => {
-    setEstat(estat ? false : true);
+    setEstat(!estat);
   };
   const classe = estat ? "cercle taronja" : "cercle";
   return (
